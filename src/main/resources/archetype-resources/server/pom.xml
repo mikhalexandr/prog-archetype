@@ -29,7 +29,7 @@
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
-							<mainClass>${project.groupId}.client.Client</mainClass>
+							<mainClass>${project.groupId}.server.Server</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>
@@ -51,11 +51,13 @@
 	</build>
 
 	<dependencies>
+
 		<dependency>
 			<groupId>${project.groupId}</groupId>
-			<artifactId>lab-common</artifactId>
+			<artifactId>common</artifactId>
 			<version>${project.version}</version>
 		</dependency>
+
 	</dependencies>
 
 </project>

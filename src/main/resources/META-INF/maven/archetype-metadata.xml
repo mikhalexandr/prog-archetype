@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<archetype-descriptor xsi:schemaLocation="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 http://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd" name="lab-parent"
+<archetype-descriptor xsi:schemaLocation="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 http://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd" name="parent"
     xmlns="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <fileSets>
@@ -13,12 +13,12 @@
       <directory></directory>
       <includes>
         <include>.gitignore</include>
-        <include>lab-parent.iml</include>
+        <include>parent.iml</include>
       </includes>
     </fileSet>
   </fileSets>
   <modules>
-    <module id="lab-common" dir="lab-common" name="lab-common">
+    <module id="common" dir="common" name="common">
       <fileSets>
         <fileSet filtered="true" packaged="true" encoding="UTF-8">
           <directory>src/main/java</directory>
@@ -29,12 +29,12 @@
         <fileSet encoding="UTF-8">
           <directory></directory>
           <includes>
-            <include>lab-common.iml</include>
+            <include>common.iml</include>
           </includes>
         </fileSet>
       </fileSets>
     </module>
-    <module id="lab-client" dir="lab-client" name="lab-client">
+    <module id="client" dir="client" name="client">
       <fileSets>
         <fileSet filtered="true" packaged="true" encoding="UTF-8">
           <directory>src/main/java</directory>
@@ -45,12 +45,12 @@
         <fileSet encoding="UTF-8">
           <directory></directory>
           <includes>
-            <include>lab-client.iml</include>
+            <include>client.iml</include>
           </includes>
         </fileSet>
       </fileSets>
     </module>
-    <module id="lab-server" dir="lab-server" name="lab-server">
+    <module id="server" dir="server" name="server">
       <fileSets>
         <fileSet filtered="true" packaged="true" encoding="UTF-8">
           <directory>src/main/java</directory>
@@ -61,7 +61,7 @@
         <fileSet encoding="UTF-8">
           <directory></directory>
           <includes>
-            <include>lab-server.iml</include>
+            <include>server.iml</include>
           </includes>
         </fileSet>
       </fileSets>
